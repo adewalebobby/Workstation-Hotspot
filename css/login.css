@@ -26,6 +26,15 @@ body {
   overflow: hidden;
 }
 
+  #color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6; }
+
 .login {
   top: 0px;
   background-color: white;
@@ -42,10 +51,10 @@ body {
   width: 30%;
   min-width: 320px;
   position: relative;
+  float: left;
 }
 
 .login .login-content {
-  padding: 100px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -149,3 +158,88 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+.overlay-header{
+  /*top: 0px;
+  right: 0px;
+  float: right; */
+  width: 70%;
+  height: 100%;
+  position: relative;
+  float: right;
+
+}
+.overlay-header img {
+  position: absolute;
+  width:60%;
+  top:50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+}
+
+
+
+
+/* Media Quaries */
+
+@media (min-width: 920px) and (max-width: 1069px) {
+  .overlay-header {
+    width: 65%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 919px) {
+  .overlay-header {
+    width: 60%;
+  }
+
+  .overlay-header img {
+    width: 70%
+  }
+}
+
+@media (min-width: 715px) and (max-width: 799px) {
+  .overlay-header {
+    width: 55%;
+  }
+
+  .overlay-header img {
+    width: 80%
+  }
+}
+
+@media (min-width: 640px) and (max-width: 714px) {
+  .overlay-header {
+    width: 50%;
+  }
+
+  .overlay-header img {
+    width: 85%
+  }
+}
+
+@media (min-width: 585px) and (max-width: 639px) {
+  .overlay-header {
+    width: 45%;
+  }
+
+  .overlay-header img {
+    width: 85%
+  }
+}
+
+@media (max-width: 584px) {
+  .overlay-header {
+    display: none;
+  }
+  
+  .login {
+    width: 100%;
+  }
+}
+
+
+
