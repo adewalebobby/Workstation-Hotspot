@@ -1,0 +1,91 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  margin: 0 auto;
+  color: gba(0, 0, 0, 0.75);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../img/hero-image-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+  }
+
+
+.container .message-card {
+  width: 420px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .message-card-logo {
+  width: 100%;
+    
+  }
+
+  .message-card-logo a{
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  }
+
+  .message-card-logo img {
+    display: block;
+    width: 160px;
+    vertical-align: middle;
+    margin: 0 auto;
+    }
+
+    .message-card-info {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .message-card-info h1 {
+      font-size: 24px;
+      font-weight: normal;
+
+    }
+
+  .message-card-info p{
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    .message-card-info a{
+      text-decoration: none;
+      font-weight: bold;
+      color: red;
+      font-size: 16px;
+      transition: all .3s;
+    }
+
+    .message-card-info a:hover{
+      color: #ffdd6c;
+    }
+
+@media (max-width: 460px) {
+  
+  .container .message-card {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+
+
+
